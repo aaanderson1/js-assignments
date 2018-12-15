@@ -58,7 +58,6 @@ function runTests(group, func, inputs, expected) {
 
 function wrapArgs(func) {
     return function() {
-        console.log(arguments);
         return func(Array.from(arguments));
     }
 }
